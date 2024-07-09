@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1006207721440",
+    "project_id": "resid-dfb87",
+    "storage_bucket": "resid-dfb87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006207721440:android:810c6062ef7614c4d59585",
+        "android_client_info": {
+          "package_name": "com.residco.resid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTeSoEQNTEH923EvjwYz2MMmd35l5mpkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
