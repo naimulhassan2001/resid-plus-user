@@ -67,7 +67,6 @@ dependencies:
   mime: ^1.0.4
   font_awesome_flutter: ^10.7.0
   share_plus: ^7.2.2
-  uni_links: ^0.5.1
   firebase_core: ^2.30.0
   firebase_dynamic_links: ^5.4.14
   firebase_messaging: ^14.9.1
