@@ -41,9 +41,9 @@ main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  await MobileAds.instance.initialize();
-  AdsServices.loadInterstitialAd();
-  AdsServices.loadBannerAd();
+  // await MobileAds.instance.initialize();
+  // AdsServices.loadInterstitialAd();
+  // AdsServices.loadBannerAd();
 
   Map<String, Map<String, String>> languages = await dep.init();
 
