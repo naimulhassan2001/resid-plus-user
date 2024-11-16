@@ -19,8 +19,10 @@ class SubscriptionController extends GetxController {
         "${ApiUrlContainer.baseUrl}${ApiUrlContainer.userSubs}");
 
     if (response.statusCode == 200) {
+
+      print(response.responseJson);
       List data = jsonDecode(response.responseJson)['data']['attributes']
-              ['userSubscriptionList'] ??
+          ??
           [];
 
       if (data.isNotEmpty) {

@@ -1,7 +1,7 @@
 class ApiUrlContainer{
   /// local url
-   static const String baseUrl = "http://103.145.138.74:5000/api/";
-   static const String socketUrl="http://103.145.138.74:5001";
+   static const String baseUrl = "http://192.168.10.176:8080/api/";
+   static const String socketUrl="http://192.168.10.176:8081";
 
    ///live
    // static const String baseUrl = "https://resid-plus.com/api/";
