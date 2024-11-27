@@ -2,69 +2,74 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<key>CADisableMinimumFrameDurationOnPhone</key>
-    <true/>
-    <key>UIBackgroundModes</key>
-    <array>
-        <string>remote-notification</string>
-    </array>
-    <key>NSUserNotificationType</key>
-    <integer>7</integer>
-    <key>UNNotificationPresentationOptions</key>
-    <array>
-        <string>alert</string>
-        <string>sound</string>
-        <string>badge</string>
-    </array>
-    <key>FirebaseAppDelegateProxyEnabled</key>
-    <false/>
-    <key>APNSToken</key>
-    <!-- Your APNs token here -->
-    <key>CFBundleDevelopmentRegion</key>
-
-    <key>CFBundleDisplayName</key>
-    <string>Resid+</string>
-    <key>CFBundleExecutable</key>
-    <string>$(EXECUTABLE_NAME)</string>
-    <key>CFBundleIdentifier</key>
-    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-    <key>CFBundleInfoDictionaryVersion</key>
-    <string>6.0</string>
-    <key>CFBundleName</key>
-    <string>Resid+</string>
-    <key>CFBundlePackageType</key>
-    <string>APPL</string>
-    <key>CFBundleShortVersionString</key>
-    <string>1.0.6</string>
-    <key>CFBundleSignature</key>
-    <string>????</string>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleTypeRole</key>
-            <string>Editor</string>
-            <key>CFBundleURLName</key>
-            <string>com.residco.resid</string>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>residco.page.link</string>
-            </array>
-        </dict>
-    </array>
+	<key>APNSToken</key>
+	<string>CFBundleDevelopmentRegion</string>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDisplayName</key>
+	<string>Resid+</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Resid+</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.0.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.residco.resid</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>residco.page.link</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
 	<key>FirebaseDynamicLinksCustomDomains</key>
 	<array>
 		<string>residco.page.link</string>
 	</array>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-3940256099942544~1458002511</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>To pick profile picture for user identify</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>To pick profile picture for user identify</string>
+	<key>NSUserNotificationType</key>
+	<integer>7</integer>
+	<key>SKAdNetworkItems</key>
+	<array>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>cstr6suwn9.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>4fzdc2evr5.skadnetwork</string>
+		</dict>
+	</array>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string></string>
 	<key>UIMainStoryboardFile</key>
@@ -75,24 +80,11 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-
-
-	<key>GADApplicationIdentifier</key>
-    <string>ca-app-pub-3940256099942544~1458002511</string>
-
-    <key>SKAdNetworkItems</key>
-    <array>
-       <dict>
-          <key>SKAdNetworkIdentifier</key>
-          <string>cstr6suwn9.skadnetwork</string>
-       </dict>
-       <dict>
-          <key>SKAdNetworkIdentifier</key>
-          <string>4fzdc2evr5.skadnetwork</string>
-       </dict>
-       <!-- Add any other necessary SKAdNetworkIdentifiers -->
-    </array>
-
-
+	<key>UNNotificationPresentationOptions</key>
+	<array>
+		<string>alert</string>
+		<string>sound</string>
+		<string>badge</string>
+	</array>
 </dict>
 </plist>
