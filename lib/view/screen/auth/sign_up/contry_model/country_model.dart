@@ -4,7 +4,8 @@
 
 import 'dart:convert';
 
-CountryModel countryModelFromJson(String str) => CountryModel.fromJson(json.decode(str));
+CountryModel countryModelFromJson(String str) =>
+    CountryModel.fromJson(json.decode(str));
 
 String countryModelToJson(CountryModel data) => json.encode(data.toJson());
 
@@ -22,18 +23,18 @@ class CountryModel {
   });
 
   factory CountryModel.fromJson(Map<String, dynamic> json) => CountryModel(
-    status: json["status"],
-    statusCode: json["statusCode"],
-    message: json["message"],
-    data: json["data"] == null ? null : Data.fromJson(json["data"]),
-  );
+        status: json["status"],
+        statusCode: json["statusCode"],
+        message: json["message"],
+        data: json["data"] == null ? null : Data.fromJson(json["data"]),
+      );
 
   Map<String, dynamic> toJson() => {
-    "status": status,
-    "statusCode": statusCode,
-    "message": message,
-    "data": data?.toJson(),
-  };
+        "status": status,
+        "statusCode": statusCode,
+        "message": message,
+        "data": data?.toJson(),
+      };
 }
 
 class Data {
@@ -46,14 +47,19 @@ class Data {
   });
 
   factory Data.fromJson(Map<String, dynamic> json) => Data(
-    type: json["type"],
-    attributes: json["attributes"] == null ? [] : List<Attribute>.from(json["attributes"]!.map((x) => Attribute.fromJson(x))),
-  );
+        type: json["type"],
+        attributes: json["attributes"] == null
+            ? []
+            : List<Attribute>.from(
+                json["attributes"]!.map((x) => Attribute.fromJson(x))),
+      );
 
   Map<String, dynamic> toJson() => {
-    "type": type,
-    "attributes": attributes == null ? [] : List<dynamic>.from(attributes!.map((x) => x.toJson())),
-  };
+        "type": type,
+        "attributes": attributes == null
+            ? []
+            : List<dynamic>.from(attributes!.map((x) => x.toJson())),
+      };
 }
 
 class Attribute {
@@ -70,18 +76,20 @@ class Attribute {
   });
 
   factory Attribute.fromJson(Map<String, dynamic> json) => Attribute(
-    id: json["_id"],
-    countryName: json["countryName"],
-    countryCode: json["countryCode"],
-    countryFlag: json["countryFlag"] == null ? null : CountryFlag.fromJson(json["countryFlag"]),
-  );
+        id: json["_id"],
+        countryName: json["countryName"],
+        countryCode: json["countryCode"],
+        countryFlag: json["countryFlag"] == null
+            ? null
+            : CountryFlag.fromJson(json["countryFlag"]),
+      );
 
   Map<String, dynamic> toJson() => {
-    "_id": id,
-    "countryName": countryName,
-    "countryCode": countryCode,
-    "countryFlag": countryFlag?.toJson(),
-  };
+        "_id": id,
+        "countryName": countryName,
+        "countryCode": countryCode,
+        "countryFlag": countryFlag?.toJson(),
+      };
 }
 
 class CountryFlag {
@@ -94,12 +102,12 @@ class CountryFlag {
   });
 
   factory CountryFlag.fromJson(Map<String, dynamic> json) => CountryFlag(
-    publicFileUrl: json["publicFileUrl"],
-    path: json["path"],
-  );
+        publicFileUrl: json["publicFileUrl"],
+        path: json["path"],
+      );
 
   Map<String, dynamic> toJson() => {
-    "publicFileUrl": publicFileUrl,
-    "path": path,
-  };
+        "publicFileUrl": publicFileUrl,
+        "path": path,
+      };
 }
