@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:resid_plus_user/core/global/api_response_model.dart';
 import 'package:resid_plus_user/service/api_service.dart';

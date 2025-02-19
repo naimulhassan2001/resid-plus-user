@@ -13,11 +13,6 @@ class ProfileController extends GetxController {
   ProfileRepo profileRepo;
   ProfileController({required this.profileRepo});
 
-  @override
-  void onInit(){
-
-    super.onInit();
-  }
   bannedToken()async{
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     String token =  prefs.getString(SharedPreferenceHelper.accessTokenKey) ?? "";

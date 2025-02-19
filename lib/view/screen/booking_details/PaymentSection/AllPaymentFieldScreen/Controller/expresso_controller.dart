@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
@@ -70,7 +69,7 @@ class ExpressoPaymentController extends GetxController{
       }
       else if(response.statusCode==403){
         var data =  jsonDecode(response.body);
-        debugPrint( "${"===================>$data"}");
+        debugPrint( "===================>$data");
 
       }
 

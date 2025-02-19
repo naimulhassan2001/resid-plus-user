@@ -79,7 +79,7 @@ class _FavoriteDetailsState extends State<FavoriteDetails> {
                       activeColor: AppColors.blackPrimary,
                     ),
                     dotsCount: favoriteModel.data?.attributes!.favourites?[index].residenceId?.photo?.length ?? 0,
-                    position: currentIndex,
+                    position: currentIndex.toDouble(),
                   ),
                 ],
               ),

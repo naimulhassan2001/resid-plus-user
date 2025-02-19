@@ -5,7 +5,6 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:resid_plus_user/core/app_route.dart';
 import 'package:resid_plus_user/service/notification.dart';
 import 'package:resid_plus_user/service/push_notication_service.dart';
@@ -17,7 +16,6 @@ import 'core/di_service/dependency_injection.dart' as di;
 import 'core/Language/dep.dart' as dep;
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-import 'service/ads_service.dart';
 import 'service/dynamic_link_services.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
@@ -65,7 +63,7 @@ main() async {
 }
 
 class MyApp extends StatefulWidget {
-  MyApp({super.key, required this.languages});
+  const MyApp({super.key, required this.languages});
 
   final Map<String, Map<String, String>> languages;
 

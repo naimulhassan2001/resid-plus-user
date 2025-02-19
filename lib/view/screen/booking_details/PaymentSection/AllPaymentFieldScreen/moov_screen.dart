@@ -88,7 +88,7 @@ class _MoovScreenState extends State<MoovScreen> {
                 },
                 controller: _moovController.emailCtrl,
               ),
-              country == "TOGO" || country == "MALI" ?  SizedBox(height: 16.h) : SizedBox(),
+              country == "TOGO" || country == "MALI" ?  SizedBox(height: 16.h) : const SizedBox(),
               country == "TOGO" || country == "MALI" ? CustomTextField(
                 textInputAction: TextInputAction.next,
                 keyboardType: TextInputType.text,

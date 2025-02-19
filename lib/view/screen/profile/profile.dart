@@ -1,11 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:resid_plus_user/core/app_route.dart';
-import 'package:resid_plus_user/core/helper/date_converter_helper.dart';
 import 'package:resid_plus_user/service/api_service.dart';
 import 'package:resid_plus_user/utils/app_colors.dart';
 import 'package:resid_plus_user/utils/app_icons.dart';

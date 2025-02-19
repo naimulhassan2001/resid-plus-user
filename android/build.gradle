@@ -1,20 +1,14 @@
 buildscript {
-    ext.kotlin_version = '1.8.10' // Update to at least 1.8.10
+    ext.kotlin_version = '1.8.10' // Use a stable version compatible with AGP 7.x
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://storage.googleapis.com/download.flutter.io' }  // Flutter's Maven repository
-
     }
-
     dependencies {
-
-        classpath 'com.android.tools.build:gradle:7.3.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.google.gms:google-services:4.3.15'
+        classpath 'com.android.tools.build:gradle:7.1.2'  // Ensure this is compatible with Gradle 8.3
+        classpath 'com.google.gms:google-services:4.4.2'
     }
-
-
 }
 
 allprojects {

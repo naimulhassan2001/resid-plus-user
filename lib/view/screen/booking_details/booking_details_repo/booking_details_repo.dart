@@ -1,4 +1,3 @@
-import 'dart:convert';
 
 import 'package:resid_plus_user/core/global/api_response_method.dart';
 import 'package:resid_plus_user/core/global/api_response_model.dart';

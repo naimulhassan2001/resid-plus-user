@@ -9,7 +9,6 @@ import 'package:resid_plus_user/service/api_service.dart';
 import 'package:resid_plus_user/utils/app_colors.dart';
 import 'package:resid_plus_user/utils/device_utils.dart';
 import 'package:resid_plus_user/view/screen/residence_details/calculation_response_model/calculation_response_model.dart';
-import 'package:resid_plus_user/view/screen/residence_details/residence_model/residence_model.dart';
 import 'package:resid_plus_user/view/screen/residence_reservation/inner_widgets/residence_reservation_top_section.dart';
 import 'package:resid_plus_user/view/screen/residence_reservation/residence_reservation_controller/residence_reservation_controller.dart';
 import 'package:resid_plus_user/view/screen/residence_reservation/residence_reservation_repo/residence_reservation_repo.dart';
@@ -230,7 +229,7 @@ class _ResidenceReseState extends State<ResidenceReservationScreen> {
                     const SizedBox(height: 24),
                     CustomTextField(
                       keyboardType:
-                          TextInputType.numberWithOptions(signed: true),
+                          const TextInputType.numberWithOptions(signed: true),
                       title: "Number of Guests".tr,
                       hintText: "Enter guest number".tr,
                       textInputAction: TextInputAction.done,

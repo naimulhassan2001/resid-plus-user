@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -70,9 +69,9 @@ final socketController = Get.put(SocketService());
         }
     }
 
-    Future<void> _launchUrl(String _url) async {
-      if (!await launchUrl(Uri.parse(_url))) {
-        throw Exception('Could not launch $_url');
+    Future<void> _launchUrl(String url) async {
+      if (!await launchUrl(Uri.parse(url))) {
+        throw Exception('Could not launch $url');
       }
     }
 }

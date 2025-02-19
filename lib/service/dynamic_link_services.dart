@@ -42,8 +42,8 @@ class DynamicLinkService {
       }
 
       print(
-          "=========================================>receivedCode ${receivedCode}");
-      print("=========================================>productId ${productId}");
+          "=========================================>receivedCode $receivedCode");
+      print("=========================================>productId $productId");
     }).onError((error) {
       print('onLink error');
       print(error.message);

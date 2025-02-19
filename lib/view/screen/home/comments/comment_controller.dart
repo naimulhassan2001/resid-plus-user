@@ -1,9 +1,6 @@
 import 'dart:convert';
-import 'dart:ui';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
 import 'package:resid_plus_user/core/global/api_url_container.dart';
 import 'package:resid_plus_user/core/helper/shared_preference_helper.dart';

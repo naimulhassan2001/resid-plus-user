@@ -142,13 +142,13 @@ class CheckoutBottomNav extends StatelessWidget {
                           buttonColor: AppColors.whiteColor,
                           onPressed: () {
                             showDialog(context: context, builder:(_)=>   AlertDialog(
-                              title: Text("Are you sure?".tr,style: TextStyle(fontWeight: FontWeight.w500,fontSize:18),),
+                              title: Text("Are you sure?".tr,style: const TextStyle(fontWeight: FontWeight.w500,fontSize:18),),
                             content: Row(
                               children: [
                                 Expanded(child:CustomElevatedButton(onPressed:(){
                                   controller.cancelRequest(id: data?[index].id ?? "",);
                                 },titleText:"Yes".tr,buttonColor:Colors.white,titleColor:AppColors.blackPrimary,buttonHeight: 45,)),
-                              SizedBox(width: 10,),
+                              const SizedBox(width: 10,),
                                 Expanded(child:CustomElevatedButton(onPressed:(){
                                   Get.back();
                                 }, titleText:"No".tr,buttonHeight: 45,)),

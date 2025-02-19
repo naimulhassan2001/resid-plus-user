@@ -1,11 +1,8 @@
-import 'dart:convert';
-import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:resid_plus_user/service/api_service.dart';
 import 'package:resid_plus_user/view/screen/home/home_repo/home_repo.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../../../core/global/api_response_model.dart';
 
 import '../../../../core/helper/shared_preference_helper.dart';
 import '../notification/notifiacation_model.dart';

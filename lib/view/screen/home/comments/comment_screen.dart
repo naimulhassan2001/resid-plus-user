@@ -1,8 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_state.dart';
 import 'package:resid_plus_user/utils/app_colors.dart';
 import 'package:resid_plus_user/utils/app_images.dart';
 import 'package:resid_plus_user/view/screen/home/comments/comment_controller.dart';
@@ -121,7 +119,7 @@ int index = 0;
             ),
             IconButton(
               onPressed: () {
-                if(controller.commentController.text != null && controller.commentController.text != "" && controller.commentController.text.isNotEmpty) {
+                if(controller.commentController.text != "" && controller.commentController.text.isNotEmpty) {
                     controller.addComment();
                     controller.sentComments(widget.id);
                    // controller.commentController.clear();

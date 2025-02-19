@@ -18,12 +18,12 @@ class NotificationHelper {
       initializationSettings,
       onDidReceiveNotificationResponse: (NotificationResponse? paylod) async {
         try {
-          Map<String, dynamic> _payloadData;
+          Map<String, dynamic> payloadData;
           if (paylod != null && paylod.payload!.isNotEmpty) {
-            _payloadData = jsonDecode(paylod.payload!);
-            debugPrint("======> Initialize Local Notification payload : $_payloadData");
+            payloadData = jsonDecode(paylod.payload!);
+            debugPrint("======> Initialize Local Notification payload : $payloadData");
 
-            handleNotificationRedirection(_payloadData);
+            handleNotificationRedirection(payloadData);
           }
         } catch (e) {}
         return;
@@ -38,7 +38,7 @@ class NotificationHelper {
       if ( body['image']['publicFileUrl'] != null) {
         try {
           await showBigPictureNotificationHiddenLargeIcon(body['message'], "", {}, "${body['image']['publicFileUrl']}", fln);
-        } on Exception catch (e) {
+        } on Exception {
           await showTextNotification(body['message'], "", {}, fln);
         }
       } else {

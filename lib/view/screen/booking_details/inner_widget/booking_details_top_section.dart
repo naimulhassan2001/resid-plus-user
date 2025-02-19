@@ -59,7 +59,7 @@ class _BookingDetailsTopSectionState extends State<BookingDetailsTopSection> {
                 activeColor: AppColors.blackPrimary,
               ),
               dotsCount: widget.data?.residenceId?.photo?.length ?? 0,
-              position: currentPosition,
+              position: currentPosition.toDouble(),
             )
           ],
         ),

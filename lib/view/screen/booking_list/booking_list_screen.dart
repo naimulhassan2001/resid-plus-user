@@ -88,7 +88,7 @@ class _BookingListScreenState extends State<BookingListScreen> {
                     child: Column(
                       children: List.generate(
                           controller.booking.length,
-                          (index) => controller.booking.length != 0 &&
+                          (index) => controller.booking.isNotEmpty &&
                                   controller.booking[index].residenceId != null &&
                                   controller.booking[index].userId != null &&
                                   controller.booking[index].hostId != null &&

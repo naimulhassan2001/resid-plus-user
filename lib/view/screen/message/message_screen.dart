@@ -1,11 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:resid_plus_user/service/socket_service.dart';
 import 'package:resid_plus_user/utils/app_colors.dart';
-import 'package:resid_plus_user/utils/app_icons.dart';
 import 'package:resid_plus_user/utils/device_utils.dart';
 import 'package:resid_plus_user/view/screen/booking_list/booking_list_model/booking_list_model.dart';
 import 'package:resid_plus_user/view/widgets/app_bar/custom_app_bar.dart';
@@ -194,7 +192,7 @@ class _MessageScreenState extends State<MessageScreen> {
                   const SizedBox(width: 20),
                   GestureDetector(
                     onTap: () {
-                      if(messageController.text != null && messageController.text != "" && messageController.text.isNotEmpty){
+                      if(messageController.text != "" && messageController.text.isNotEmpty){
                         Get.find<SocketService>().addNewMessage(messageController.text, userUid, Get.find<SocketService>().chatId);
                       }
 

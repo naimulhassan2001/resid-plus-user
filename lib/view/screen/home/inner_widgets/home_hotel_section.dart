@@ -5,17 +5,12 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:resid_plus_user/core/app_route.dart';
-import 'package:resid_plus_user/core/global/api_url_container.dart';
 import 'package:resid_plus_user/service/dynamic_link_services.dart';
-import 'package:resid_plus_user/view/screen/home/comments/comment_controller.dart';
 import 'package:resid_plus_user/view/screen/home/comments/comment_screen.dart';
 import 'package:resid_plus_user/view/screen/home/home_controller/home_controller.dart';
-import 'package:resid_plus_user/view/screen/residence_details/residence_model/residence_model.dart';
 import 'package:share_plus/share_plus.dart';
 import '../../../../service/api_service.dart';
 import '../../../../utils/app_colors.dart';
-import '../../residence_details/residence_details_controller/residence_details_controller.dart';
-import '../../residence_details/residence_details_repo/residence_details_repo.dart';
 import '../home_repo/home_repo.dart';
 
 class HomeHotelSection extends StatefulWidget {

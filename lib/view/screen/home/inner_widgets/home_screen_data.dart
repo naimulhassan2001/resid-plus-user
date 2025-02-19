@@ -1,8 +1,5 @@
 import 'dart:async';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,7 +9,6 @@ import 'package:resid_plus_user/view/screen/home/home_controller/home_controller
 import 'package:resid_plus_user/view/screen/home/inner_widgets/home_hotel_section.dart';
 import 'package:resid_plus_user/view/screen/home/inner_widgets/home_personal_house_section.dart';
 import 'package:resid_plus_user/view/screen/home/inner_widgets/home_residence_section.dart';
-import 'package:resid_plus_user/view/screen/home/notification/notifiacation_model.dart';
 import '../../../../service/api_service.dart';
 import '../home_repo/home_repo.dart';
 

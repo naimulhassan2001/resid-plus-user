@@ -51,14 +51,14 @@ class CustomButtonWithIcon extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(buttonColor),
-          shape: MaterialStateProperty.all(
+          backgroundColor: WidgetStateProperty.all(buttonColor),
+          shape: WidgetStateProperty.all(
             RoundedRectangleBorder(
               side: BorderSide(color: buttonBorderColor, width: buttonBorderWidth),
               borderRadius: BorderRadius.circular(buttonRadius),
             ),
           ),
-          elevation: MaterialStateProperty.all(0),
+          elevation: WidgetStateProperty.all(0),
         ),
         child: Row(
           mainAxisAlignment: mainAxisAlignment,

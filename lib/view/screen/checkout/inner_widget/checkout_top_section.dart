@@ -63,7 +63,7 @@ class _CheckoutTopSectionState extends State<CheckoutTopSection> {
                 activeColor: AppColors.blackPrimary,
               ),
               dotsCount: data?[widget.index].residenceId?.photo?.length ?? 0,
-              position:currentPosition,
+              position:currentPosition.toDouble(),
             )
           ],
         ),

@@ -1,0 +1,2 @@
+/Users/flutter project/resid-plus-user/android/app/.cxx/RelWithDebInfo/2m4ql3a3/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/flutter project/resid-plus-user/android/app/.cxx/RelWithDebInfo/2m4ql3a3/armeabi-v7a/CMakeFiles/rebuild_cache.dir

@@ -10,7 +10,6 @@ import 'package:share_plus/share_plus.dart';
 import '../../../../service/api_service.dart';
 import '../../../../service/dynamic_link_services.dart';
 import '../comments/comment_screen.dart';
-import '../home_controller/home_controller.dart';
 import '../home_repo/home_repo.dart';
 
 class HomePersonalHouseSection extends StatefulWidget {
@@ -25,6 +24,7 @@ class HomePersonalHouseSection extends StatefulWidget {
 
 class _HomePersonalHouseSectionState extends State<HomePersonalHouseSection> {
   String residenceName = "PersonalHouse";
+  @override
   void initState() {
     Get.put(ApiService(sharedPreferences: Get.find()));
     Get.put(HomeRepo(apiService: Get.find()));

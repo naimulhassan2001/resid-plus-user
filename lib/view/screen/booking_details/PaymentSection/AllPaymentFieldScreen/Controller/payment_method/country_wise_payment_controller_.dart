@@ -8,7 +8,6 @@ import 'package:resid_plus_user/view/screen/booking_details/PaymentSection/AllPa
 
 import 'country_repo.dart';
 
-import 'package:http/http.dart' as http;
 
 class CountryWisePaymentController extends GetxController  {
 

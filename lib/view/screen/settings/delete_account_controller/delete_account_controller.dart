@@ -24,7 +24,7 @@ class DeleteAccountController extends GetxController {
     ApiResponseModel responseModel = await deleteAccountRepo.deleteAccount(password: passwordController.text);
     DeleteAccountModel deleteAccountModel; //
 
-    print("${passwordController.text}");// Define the variable here
+    print(passwordController.text);// Define the variable here
 
     if (responseModel.statusCode == 200) {
       deleteAccountModel = DeleteAccountModel.fromJson(jsonDecode(responseModel.responseJson));

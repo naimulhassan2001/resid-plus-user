@@ -2,10 +2,14 @@ class ApiUrlContainer{
   /// local url
   //  static const String baseUrl = "http://192.168.10.176:8080/api/";
   //  static const String socketUrl="http://192.168.10.176:8081";
+  //
+  // / local url
+   static const String baseUrl = "http://159.223.195.234:9010/api/";
+   static const String socketUrl="http://159.223.195.234:600322 ";
 
-   ///live
-   static const String baseUrl = "https://resid-plus.com/api/";
-   static const String socketUrl = "https://resid-plus.com";
+   // ///live
+   // static const String baseUrl = "https://resid-plus.com/api/";
+   // static const String socketUrl = "https://resid-plus.com";
   //SignIn
   static const String signInEndPoint = "users/signin";
   static const String deleteAccount = "users";

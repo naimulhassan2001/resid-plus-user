@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/foundation.dart';
@@ -154,7 +153,7 @@ class _ResidenceDetailsScreenState extends State<ResidenceDetailsScreen> {
                             activeColor: AppColors.blackPrimary,
                           ),
                           dotsCount: 5,
-                          position: currentIndex,
+                          position: currentIndex.toDouble(),
                         )
                       ],
                     ),
@@ -1155,7 +1154,7 @@ class _ResidenceDetailsScreenState extends State<ResidenceDetailsScreen> {
 extension TimeOfDayConverter on TimeOfDay {
   String to24hours() {
     final hour = this.hour.toString().padLeft(2, "0");
-    final min = this.minute.toString().padLeft(2, "0");
+    final min = minute.toString().padLeft(2, "0");
     return "$hour:$min";
   }
 }
